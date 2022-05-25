@@ -1,0 +1,12 @@
+package com.google.kotlin.softuni.oop.`02encapsulation`.human
+
+class ExceptionMessages {
+    companion object {
+        const val INVALID_AGE = "AGE CAN'T BE ZERO OR NEGATIVE"
+        const val INVALID_NAME = "NAME CAN'T BE NULL OR EMPTY"
+        const val INVALID_SCHOOL_NAME = "SCHOOL NAME CAN'T BE NULL OR EMPTY"
+        const val INVALID_COMPANY_NAME = "COMPANY NAME CAN'T BE NULL OR EMPTY"
+        const val INVALID_SALARY = "INVALID SALARY WHEN WORKERS AGE >= 50!"
+        const val INVALID_SALARY_ZERO = "INVALID SALARY: CAN NOT BE NEGATIVE OR ZERO"
+    }
+}

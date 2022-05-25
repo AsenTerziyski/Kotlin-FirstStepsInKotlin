@@ -1,4 +1,4 @@
-package com.google.kotlin.section1Pregovor
+package com.google.kotlin.section1.section1Pregovor
 
 fun main() {
 /*

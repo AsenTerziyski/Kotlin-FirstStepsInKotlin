@@ -1,6 +1,6 @@
 package com.google.kotlin.section2
 
-import javafx.beans.binding.When
+//import javafx.beans.binding.When
 
 fun main(args: Array<String>) {
 //    println(sum(5))
