@@ -46,4 +46,30 @@ fun main() {
     println("----- ${df.format(recLength * recWith)}")
     println(df.format(recLength * recWith))
 
+    val tt = 'a'
+    println(tt.toInt())
+
+    val str = "0123456 abcd"
+    for (ch in str) {
+        println("$ch -> ${ch.toInt()}")
+    }
+
+    println("abc" + 1 + "a")
+    val ttt: String = "1" + "abc"
+    println(ttt)
+    var text = """
+    |Tell me and I forget.
+    |Teach me and I remember.
+    |Involve me and I learn.
+    |(Benjamin Franklin)
+    """
+    println(text)
+
+    text = """
+    |Tell me and I forget.
+    |Teach me and I remember.
+    |Involve me and I learn.
+    |(Benjamin Franklin)
+    """.trimMargin()
+    println(text)
 }

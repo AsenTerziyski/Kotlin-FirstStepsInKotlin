@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
     //get nth number of Fibonacci Series
     // 1 1 2 3 5 8 13................nth
     try {
-    println(getFibonacci(6, BigInteger("1"), BigInteger("0")))
+    println(getFibonacci(7, BigInteger("1"), BigInteger("0")))
     } catch (ex:Exception) {
         println(ex.message)
     }

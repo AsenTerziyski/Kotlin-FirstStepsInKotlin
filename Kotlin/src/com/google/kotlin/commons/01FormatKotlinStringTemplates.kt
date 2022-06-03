@@ -3,6 +3,7 @@ package com.google.kotlin.commons
 import com.google.kotlin.section1.s5.format
 
 fun main() {
+
     val testNumber1 = 1.23568955
     val testNumber2 = 10.23568955
     println("%.3f".format(testNumber1))

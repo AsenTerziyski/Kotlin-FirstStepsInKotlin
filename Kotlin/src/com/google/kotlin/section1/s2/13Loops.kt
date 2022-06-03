@@ -6,8 +6,8 @@ import java.util.*
 fun main() {
 //    WAP to com.google.kotlin.section2.print even numbers between first and second
     val scanner = Scanner(System.`in`)
-    var first: Int
-    var second: Int
+    val first: Int
+    val second: Int
 
     try {
         first = scanner.nextLine().toInt()

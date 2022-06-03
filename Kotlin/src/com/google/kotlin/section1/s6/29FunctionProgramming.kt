@@ -18,6 +18,28 @@ fun main(args: Array<String>) {
     println(1.7556.format(2))
     println("The volume is %.3f %c".format(volume, 'a'))
 
+    val fullNameLambda: (String, String) -> String = { str1, str2 -> "$str1 $str2" }
+    println(concatTwoNames("Asen", "Terziyski", fullNameLambda))
+    println(concatTwoNames("John", "Smith", fullNameLambda))
+
+    val fullNameLambdaWithSeparator: (String, String, String) -> String =
+        { str1, separator, str2 -> str1 + separator + str2 }
+
+    concatTwoNameWithSeparatorBetween("John", "Smith", " + ", fullNameLambdaWithSeparator)
+
+
+}
+
+fun concatTwoNameWithSeparatorBetween(
+    firstName: String, lastName: String, separator: String,
+    fullNameLambdaWithSeparator: (String, String, String) -> String
+)
+{
+    println(fullNameLambdaWithSeparator(firstName, separator, lastName))
+}
+
+fun concatTwoNames(firstName: String, lastName: String, nameLambda: (String, String) -> String): String {
+    return nameLambda(firstName, lastName)
 }
 
 

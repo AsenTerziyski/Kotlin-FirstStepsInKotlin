@@ -11,7 +11,6 @@ For example, the method padEnd() allows us to format a String, so that the expre
     println("Hello".padEnd(20, '!'))
     println("Yes".padStart(5, '*'))
 
-
     var n = 10
     println("Number is $n")
     val m = 100
@@ -19,13 +18,14 @@ For example, the method padEnd() allows us to format a String, so that the expre
     var message = "n+1 = ${n + 1}"
     println(message)
 
-    n = -10
+    n = 0
     message = "$n is ${
-    when {
-        n > 0 -> "positive"
-        n < 0 -> "negative and ${if (n % 2 == 0) "even" else "odd"}"
-        else -> "zero"
-    }}"
+        when {
+            n > 0 -> "positive and ${if (n % 2 == 0) "even" else "odd"}"
+            n < 0 -> "negative and ${if (n % 2 == 0) "even" else "odd"}"
+            else -> "zero"
+        }
+    }"
     println(message)
 //    https://www.baeldung.com/kotlin/string-templates
 

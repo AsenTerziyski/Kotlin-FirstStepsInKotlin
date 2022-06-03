@@ -30,7 +30,7 @@ fun Double.format(digits: Int) = "%.${digits}f".format(this)
 
 open class Circle {
     fun findCirclePerimeter(r: Double): Double {
-        return 2 * Maths.piNumber
+        return 2 * r * Maths.piNumber
     }
 
     open fun findCircleArea(r: Double): Double {
@@ -50,3 +50,5 @@ object Maths : Circle() {
         return super.findCircleArea(r)
     }
 }
+
+class Calculator

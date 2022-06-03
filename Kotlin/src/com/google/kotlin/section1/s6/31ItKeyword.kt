@@ -1,10 +1,14 @@
 package com.google.kotlin.section1.s6
 
+import kotlin.math.abs
+import kotlin.math.pow
+import kotlin.math.sqrt
+
 fun main(args: Array<String>) {
     //write a prigram tha receives a string and reverses it:
     // hello - > olleh
     // test reversed()
-    var testString = "Hello, Kotlin!"
+    val testString = "Hello, Kotlin!"
     println(testString.reversed())
 
     val lambda: (String) -> String = { str: String -> str.reversed() }
@@ -17,3 +21,4 @@ fun main(args: Array<String>) {
 fun reverseString(input: String, myFunc: (String) -> String) {
     println(myFunc(input))
 }
+
