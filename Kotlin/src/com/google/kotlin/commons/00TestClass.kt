@@ -10,7 +10,6 @@ fun main(args: Array<String>) {
     test.name = "a"
     println(test.name)
 
-
 }
 
 class Test(name: String, number: Int) {

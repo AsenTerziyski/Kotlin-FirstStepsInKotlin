@@ -8,6 +8,4 @@ fun main() {
         println(name)
     }
 
-
-
 }
