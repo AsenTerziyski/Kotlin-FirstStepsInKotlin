@@ -13,18 +13,18 @@ fun main(args: Array<String>) {
 }
 
 // 1 + 2 + 3 + 4 + 5 = 15
-fun sum(x:Long):Long = when(x) {
+fun sum(x: Long): Long = when (x) {
     1L -> 1L
-    else -> x + sum(x-1L)
+    else -> x + sum(x - 1L)
 }
 
 
 // 1 + 2 + 3 + 4 + 5 = 15
-tailrec fun sumTwo(x:Long, run:Long = 1L):Long =
+tailrec fun sumTwo(x: Long, run: Long = 1L): Long =
     when (x) {
-    1L->run
-    else -> sumTwo(x-1, run + x)
-}
+        1L -> run
+        else -> sumTwo(x - 1, run + x)
+    }
 
 
 //fun sum(x:Long):Long {

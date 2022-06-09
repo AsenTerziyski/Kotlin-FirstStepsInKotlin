@@ -1,7 +1,10 @@
 package com.google.kotlin.section2
 
+
+//https://www.programiz.com/kotlin-programming/recursion
 fun main(args: Array<String>) {
     println(fibonacci(2))
+    println(fibonacci(3))
     println(fibonacci(5))
     println(fibonacci(6))
     println(fibonacci(10))
@@ -19,3 +22,4 @@ fun fibonacci(position: Int): Int {
         else -> fibonacci(position - 1) + fibonacci(position - 2)
     }
 }
+
