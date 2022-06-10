@@ -36,6 +36,7 @@ fun main(args: Array<String>) {
     val test = {s:String, c:String -> s.length+c.length}
     val a = a("Peter", "Smith", test)
     println(a)
+    //
 
 }
 
