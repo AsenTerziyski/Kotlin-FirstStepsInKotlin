@@ -42,3 +42,4 @@ data class Container<T>(val obj: T) {
     fun <R> map(transformer: (T) -> R): Container<R> = Container(transformer(obj))
     fun <R> flatMap(transformer: (T) -> Container<R>) = transformer(obj)
 }
+
