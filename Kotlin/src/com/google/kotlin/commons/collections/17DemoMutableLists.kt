@@ -34,9 +34,6 @@ fun main(args: Array<String>) {
             count++
         }
     }
-
 //    mutableList.removeIf { it == 3 }
-
     println(mutableList.joinToString(", "))
-
 }

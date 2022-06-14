@@ -26,5 +26,4 @@ fun main(args: Array<String>) {
     for (s in copyOfRange) {
         println(s)
     }
-
 }

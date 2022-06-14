@@ -1,7 +1,6 @@
 package com.google.kotlin.commons.collections
 
 fun main() {
-
     val countries = mapOf<Int, String>(1 to "USA", 20 to "BG", 3 to "SWE")
     for (country in countries) {
         if (country.key <= 9) {

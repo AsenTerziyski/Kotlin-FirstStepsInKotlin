@@ -1,13 +1,9 @@
 package com.google.kotlin.commons
-
 import java.util.*
 import kotlin.Comparator
-
 fun main() {
     println("START.......")
-
     val listOfPersons = LinkedList<Person>()
-
 //    for (i in 0 until n) {
 //        val input = scanner.nextLine().split("\\s+".toRegex())
 //        val person = Person(input[0], input[1], input[2].toInt())
@@ -40,24 +36,19 @@ fun main() {
         .forEach { println("${it.name} ${it.lastName} is ${it.age} years old") }
 
     println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
-
-
 //    listOfPersons.sortBy { p -> p.lastName }
 //    listOfPersons.sortBy { p -> p.age }
 //    listOfPersons.sortBy(Person::age)
 //    listOfPersons.sortByDescending { p -> p.age }
 //    listOfPersons.reverse()
-
     listOfPersons
         .stream()
         .forEach { println("${it.name} ${it.lastName} is ${it.age} years old") }
-
     println(".........END")
 }
 
 
 class Person() {
-
     var name: String = ""
         set(value) {
             if (value.isBlank()) {
@@ -65,7 +56,6 @@ class Person() {
             }
             field = value
         }
-
     var lastName: String = ""
         set(value) {
             if (value.isBlank()) {
@@ -73,7 +63,6 @@ class Person() {
             }
             field = value
         }
-
     var age: Int = -1
         set(value) {
             if (value <= 0) {
@@ -81,7 +70,6 @@ class Person() {
             }
             field = value
         }
-
 }
 
 class ComparePersons {

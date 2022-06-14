@@ -8,8 +8,6 @@ fun main() {
     tvSet.switchOff()
     tvSet.volumeUp()
     tvSet.volumeDown()
-
-
 }
 
 interface MyRemote {

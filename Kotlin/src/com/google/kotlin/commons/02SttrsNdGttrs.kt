@@ -1,7 +1,6 @@
 package com.google.kotlin.commons
 
 fun main() {
-
     val maria = Girl()
     maria.actualAge = 15
     maria.age = 15

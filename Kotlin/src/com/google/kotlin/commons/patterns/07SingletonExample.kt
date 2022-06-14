@@ -3,7 +3,6 @@ package com.google.kotlin.commons
 
 //https://blog.mindorks.com/how-to-create-a-singleton-class-in-kotlin
 fun main(args: Array<String>) {
-
     DemoSingleton.printVarName()
     DemoSingleton.variableName = "New name"
     var a = A()
@@ -30,5 +29,4 @@ class A {
         DemoSingleton.printVarName()
         println(DemoSingleton)
     }
-
 }

@@ -3,12 +3,10 @@ package com.google.kotlin.commons
 import com.google.kotlin.section1.s5.format
 import kotlin.math.pow
 
-
 //In Kotlin, a function which can accept a function as parameter or can return a function
 // is called Higher-Order function.
 // Instead of Integer, String or Array as a parameter to function,
 // we will pass anonymous function or lambdas.
-
 fun main() {
     val myLambdaFunction: (Int, Int) -> Int = { x, y -> x + y }
     println(myLambdaFunction(3, 4))

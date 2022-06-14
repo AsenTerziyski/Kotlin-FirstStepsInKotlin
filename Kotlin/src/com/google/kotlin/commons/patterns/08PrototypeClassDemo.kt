@@ -8,15 +8,12 @@ fun main() {
     val b1 = basicBike.clone()
     val b2 = basicBike.clone()
 
-
     println(b1)
     println(b2)
 
     b1.gears = 7
     println(b1)
     println(b1.gears)
-
-
 }
 
 class Bike : Cloneable {
@@ -40,6 +37,4 @@ class Bike : Cloneable {
     public override fun clone(): Bike {
         return Bike()
     }
-
 }
-

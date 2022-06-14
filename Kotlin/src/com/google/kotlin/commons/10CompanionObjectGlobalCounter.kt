@@ -16,7 +16,6 @@ fun main() {
     println(student1.stringId)
     println(student2.stringId)
     println(student3.stringId)
-
 }
 
 class Student(name: String, number: Int) {
@@ -37,7 +36,4 @@ class Student(name: String, number: Int) {
             return ++ID
         }
     }
-
-
 }
-

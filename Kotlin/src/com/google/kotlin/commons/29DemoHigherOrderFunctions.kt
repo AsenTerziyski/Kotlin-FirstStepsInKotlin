@@ -4,7 +4,6 @@ import com.google.kotlin.section1.s6.format
 import kotlin.math.pow
 
 fun main(args: Array<String>) {
-
     println(b())
     println(b()("Hello"))
     println(b().invoke("Hello"))
@@ -67,4 +66,3 @@ fun a(s1:String, s2:String, b: (String, String) -> Int): Int {
 fun b(): (String) -> Int {
     return { s -> s.length }
 }
-

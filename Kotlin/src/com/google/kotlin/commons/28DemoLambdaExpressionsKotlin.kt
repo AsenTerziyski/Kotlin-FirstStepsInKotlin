@@ -3,7 +3,6 @@ package com.google.kotlin.commons
 import kotlin.math.sqrt
 
 fun main(args: Array<String>) {
-
     val somethingOne = { "SomethingOne" }
     println(somethingOne.toString())
     println(somethingOne.invoke())

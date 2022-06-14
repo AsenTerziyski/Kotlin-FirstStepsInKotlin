@@ -21,7 +21,6 @@ data class MyConst<out T : Any>(val head: T, val tail: MyLinkedList<T>) : MyLink
     override fun toString(): String = "$head -- $tail"
 
 }
-
 // What is Nothing?
 /*
 Nothing is a type in Kotlin that represents

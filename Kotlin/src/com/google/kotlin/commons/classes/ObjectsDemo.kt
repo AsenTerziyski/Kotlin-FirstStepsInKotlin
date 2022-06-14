@@ -5,7 +5,6 @@ import kotlin.math.pow
 
 fun main() {
     println("PROGRAM STARTED!")
-
     val baseCircle = object {
         val radius = 10.0
         fun getCircleArea(): Double {
@@ -66,5 +65,4 @@ object Casio: Calculator() {
     fun myPow(base:Double, a:Double):Double {
          return base.pow(a)
     }
-
 }

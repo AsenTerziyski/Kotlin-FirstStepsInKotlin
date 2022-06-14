@@ -22,6 +22,4 @@ fun main(args: Array<String>) {
 
     println("The length of name is ${name.length}")
     println("Name is $name")
-
-
 }

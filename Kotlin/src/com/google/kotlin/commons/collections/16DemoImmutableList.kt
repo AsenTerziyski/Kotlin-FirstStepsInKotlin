@@ -10,6 +10,5 @@ fun main(args: Array<String>) {
 
     val numbers = listOf<Int>(0, 1, 2, 1)
     println(numbers.find { n -> n == 1 })
-
 }
 

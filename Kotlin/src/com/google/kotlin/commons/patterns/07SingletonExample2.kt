@@ -8,7 +8,6 @@ fun main(args: Array<String>) {
     println(B())
     println(DemoSingleton2.hashCode())
     println(DemoSingleton2.hashCode())
-
 }
 
 open class B {
@@ -26,7 +25,6 @@ object DemoSingleton2: B() {
     init {
         println("Singleton class invoked.")
     }
-
     var variableName = "I am Var"
     override fun printVarName() {
         println(variableName)

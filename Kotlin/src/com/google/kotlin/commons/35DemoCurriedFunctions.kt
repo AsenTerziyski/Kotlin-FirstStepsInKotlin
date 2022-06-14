@@ -11,8 +11,6 @@ fun main() {
     println(test2(1.0))
     println(test2(1.0).invoke(2.0))
     println(test2.invoke(5.0).invoke(5.0))
-
-
 }
 
 fun <A, B, R> ((A, B) -> R).testCurried(): (A) -> (B) -> (R) =

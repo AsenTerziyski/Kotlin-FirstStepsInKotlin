@@ -10,5 +10,4 @@ fun main(args: Array<String>) {
     decimalFormat.roundingMode = RoundingMode.UP
     println(decimalFormat.format(testValue))
     println(testValue.format(2))
-
 }

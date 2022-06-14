@@ -26,7 +26,6 @@ fun main() {
         .map(::circleArea)
         .map { "AREA IS %.2fm2".format(it) }
     println(map.joinToString(", "))
-
 }
 
 fun <A, B, Result> ((A) -> B).andThen1(myFunction: (B) -> Result): (A) -> Result =

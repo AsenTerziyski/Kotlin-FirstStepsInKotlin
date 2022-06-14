@@ -14,7 +14,6 @@ fun main() {
     println(const.clazzValue)
     val sumClazz = SumClazz(ConstClazz(1), ConstClazz(2))
     println(myEval(sumClazz))
-
 }
 
 sealed class ExprClazz

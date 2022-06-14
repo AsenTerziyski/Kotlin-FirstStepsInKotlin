@@ -13,7 +13,6 @@ fun main(args: Array<String>) {
     }
 
     println(test3.toString())
-
 }
 
 class TestClass {

@@ -1,7 +1,6 @@
 package com.google.kotlin.commons.classes
 
 fun main() {
-
     // empty class
     val empty = Empty()
     println(empty)
@@ -18,7 +17,6 @@ fun main() {
     println("Name: ${demoPrimaryCtr.name} - Number: ${demoPrimaryCtr.number} - is employed: ${demoPrimaryCtr.isEmployed}!")
     demoPrimaryCtr.isEmployed = false
     println("Name: ${demoPrimaryCtr.name} - Number: ${demoPrimaryCtr.number} - is employed: ${demoPrimaryCtr.isEmployed}!")
-
 
     val ford = Car("Ford")
     val mazda = Car("Mazda")

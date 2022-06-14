@@ -3,8 +3,6 @@ package com.google.kotlin.commons
 import kotlin.math.abs
 import kotlin.math.pow
 import kotlin.math.sqrt
-
-
 /*
 I think they can explain it better than I can
 but I will try. In conventional programming when you loop through a collection you might do:
@@ -19,7 +17,6 @@ a function literal has only one parameter,
 its declaration may be omitted (along with the ->), and its name will be it:
  */
 fun main(args: Array<String>) {
-
     println(strLength("TEST") { it.length })
     println(getAbsValueOfNumber(-111) { abs(it) })
     println(getAbsValueOfNumber(111) { abs(it) })
@@ -40,7 +37,6 @@ fun main(args: Array<String>) {
         .sortedDescending()
         .map { "*$it*" }
         .forEach { print("$it ")}
-
 }
 
 

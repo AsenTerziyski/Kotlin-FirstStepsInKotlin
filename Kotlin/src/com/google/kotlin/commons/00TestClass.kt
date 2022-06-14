@@ -32,5 +32,4 @@ class Test(name: String, number: Int) {
         return number
     }
 
-
 }

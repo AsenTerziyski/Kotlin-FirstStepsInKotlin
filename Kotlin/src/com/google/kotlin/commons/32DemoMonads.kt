@@ -3,7 +3,6 @@ package com.google.kotlin.commons
 import java.util.*
 import kotlin.math.absoluteValue
 
-
 /*
 https://arrow-kt.io/docs/patterns/monads/#:~:text=Kotlin%20has%20a%20notion%20of,continuations%20with%20Kotlin%20and%20Arrow.
  */
@@ -62,19 +61,14 @@ data class MyContainer<T>(val obj: T) {
     fun <R> myMap(transformer: (T) -> R): MyContainer<R> {
         return MyContainer(transformer(this.obj))
     }
-
     fun <R> myFlatMap(transformer: (T) -> MyContainer<R>) = transformer(obj)
-
 }
 
 data class MyTestIntDataClass<Int> (val testInput:Int) {
     fun<R> myTestMap(transformer: (Int) -> R) :MyTestIntDataClass<R> {
         return MyTestIntDataClass(transformer(this.testInput))
     }
-
     fun<R> myTestFlatMap(transformer: (Int) -> MyTestIntDataClass<R>) = transformer(testInput)
-
-
 }
 
 fun testMethodThreeX(position: Int, somethingFive: (Int) -> String): String {

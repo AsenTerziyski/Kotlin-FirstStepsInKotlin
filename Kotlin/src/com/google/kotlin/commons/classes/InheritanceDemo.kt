@@ -66,7 +66,6 @@ class MyCat(name: String, breed: String) : MyAnimal(name) {
             field = value
         }
 
-
     fun myauu() {
         val split = this.javaClass.kotlin.toString().split("\\.".toRegex())
         val cat = split[split.size - 1].substring(2)

@@ -1,7 +1,6 @@
 package com.google.kotlin.commons
 
 import kotlin.math.pow
-
 //Closures are functions that
 //can access and modify properties defined
 //outside the scope of the function.
@@ -28,8 +27,3 @@ fun findRArea(a: Double, b: Double, rectLambda: (Double, Double) -> Unit) {
 fun findCArea(rad:Double, cLambda:(Double) -> Unit) {
     return cLambda(rad)
 }
-
-
-
-
-

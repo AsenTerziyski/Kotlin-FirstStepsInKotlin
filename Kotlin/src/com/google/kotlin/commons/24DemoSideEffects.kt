@@ -24,5 +24,4 @@ fun main(args: Array<String>) {
 
     println(first2)
     println(second2)
-
 }

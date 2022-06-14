@@ -6,7 +6,6 @@ import java.math.BigInteger
 import kotlin.math.pow
 
 fun main(args: Array<String>) {
-
     //get nth number of Fibonacci Series
     // 1 1 2 3 5 8 13................nth
     try {
@@ -22,12 +21,9 @@ fun main(args: Array<String>) {
 }
 
 tailrec fun getFibonacci(n: Int, a: BigInteger, b: BigInteger): BigInteger {
-
     if (n < 0) {
         throw Exception("n should be positive or zero!")
     }
-
     return if (n == 0) b
     else getFibonacci(n - 1, a + b, a)
-
 }

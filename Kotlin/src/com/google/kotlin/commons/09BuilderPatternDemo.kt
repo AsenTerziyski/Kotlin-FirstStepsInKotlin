@@ -3,7 +3,6 @@ package com.google.kotlin.commons
 import com.google.kotlin.section2.a
 
 fun main(args: Array<String>) {
-
     val buildOrder = FoodOrder
         .Builder()
         .condiments("olive oil")
@@ -16,7 +15,6 @@ fun main(args: Array<String>) {
     println(buildOrder.meat)
     println(buildOrder.fish)
     println(buildOrder.condiments)
-
 }
 
 class FoodOrder private constructor(
