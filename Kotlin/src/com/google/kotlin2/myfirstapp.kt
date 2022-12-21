@@ -20,4 +20,10 @@ fun main(args: Array<String>) {
         }
         else -> println("Something other!")
     }
+
+    try {
+    val result2 = 8 / 0
+    } catch (e: Exception) {
+        println(e.message)
+    }
 }

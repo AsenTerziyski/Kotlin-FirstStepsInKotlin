@@ -11,4 +11,9 @@ fun main() {
 
     println(numbers.filter { it <= 3 }.map { it * it }.joinToString("  "))
 
+    val numbersAsString = numbers.reversed().map { "$it!" }
+    numbersAsString.forEach { _ ->
+        println(numbersAsString)
+    }
+
 }

@@ -22,8 +22,18 @@ fun main() {
     val joinToString = numbers.joinToString(", ")
     println(joinToString)
 
-    val names = Array<String>(20){"n/a"}
+    val names = Array<String>(20) { "n/a" }
     names[7] = "Ivan"
     names[17] = "Peter"
     println(names.joinToString(", "))
+
+    names.forEach {
+        println(it)
+    }
+
+    try {
+        names[22] = "??"
+    } catch (e: Exception) {
+        println(e.message)
+    }
 }
