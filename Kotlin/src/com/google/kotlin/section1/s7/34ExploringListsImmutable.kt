@@ -8,4 +8,8 @@ fun main() {
         println(name)
     }
 
+    nameList.forEach {
+        println(it)
+    }
+
 }

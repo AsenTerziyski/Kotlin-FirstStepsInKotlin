@@ -1,5 +1,6 @@
 package com.google.kotlin.section1.s6
 
+
 fun main() {
 
     var person = Person()
@@ -22,6 +23,12 @@ fun main() {
     // трябва експлицитно да залепя стартРън()
     person.startRun()
 
+    val test = Test()
+    test.apply {
+        test1 = "Test"
+        test2 = 100
+    }.test3()
+
 }
 
 class Person {
@@ -32,4 +39,10 @@ class Person {
         println("${this.name}, ${this.age} is ready to run....")
     }
 
+}
+
+class Test {
+    var test1: String = ""
+    var test2: Int? = null
+    fun test3() = run { println(test1 + test2) }
 }
