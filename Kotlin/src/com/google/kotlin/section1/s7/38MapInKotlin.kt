@@ -12,7 +12,7 @@ fun main() {
 
     var myMutableMap = mutableMapOf<Int, String>()
     myMutableMap.putIfAbsent(1, "USA")
-    myMutableMap.put(8, "BG")
+    myMutableMap[8] = "BG"
     myMutableMap.put(7, "SWE")
     myMutableMap.replace(2, "TEST")
     myMutableMap.replace(1, "TEST1")
@@ -23,5 +23,13 @@ fun main() {
     for (entry in myMutableMap) {
         println("%d => %s".format(entry.key, entry.value))
     }
+
+    val myStrMutableMap = mutableMapOf<String, String>()
+    myStrMutableMap["One"] = "TEST ONE"
+    myStrMutableMap["Two"] = "TEST TWO"
+    myStrMutableMap.putIfAbsent("One", "TEST ONE ONE")
+    myStrMutableMap.putIfAbsent("ONE", "TEST ONE ONE")
+
+    myStrMutableMap.forEach { (key, value) -> println("%s --> %s".format(key, value)) }
 
 }

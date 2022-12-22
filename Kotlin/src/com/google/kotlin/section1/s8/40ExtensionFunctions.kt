@@ -6,12 +6,17 @@ fun main(args: Array<String>) {
     camera.takePicture()
     camera.applyFilter()
     camera.savePicture()
+    camera.checkBattery()
 }
 
 fun Camera.applyFilter() {
     println("Filter applied!")
 }
 
+
+fun Camera.checkBattery() {
+    println("Checking battery!")
+}
 class Camera {
     fun openCamera () {
         println("Camera opened!")
