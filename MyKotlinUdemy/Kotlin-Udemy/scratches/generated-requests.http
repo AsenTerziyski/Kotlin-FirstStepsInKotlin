@@ -1,0 +1,11 @@
+###
+GET /export
+
+###
+GET http://localhost:8080/androriapi
+
+###
+GET https://api.covid19api.com/summary/
+
+###
+GET http://localhost:8080/
