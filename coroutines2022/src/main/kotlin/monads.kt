@@ -1,2 +1,3 @@
-class monads {
+fun main() {
+    
 }

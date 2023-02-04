@@ -26,7 +26,7 @@ private fun checkAgeIfCanDriveInCountry(age: Int) =
     }
 
 interface Score
-private class Run(val runs: Int) : Score
+open class Run(val runs: Int?) : Score
 private class Boundary(val b: Int) : Score
 private class Six(val sixes: Int) : Score
 
