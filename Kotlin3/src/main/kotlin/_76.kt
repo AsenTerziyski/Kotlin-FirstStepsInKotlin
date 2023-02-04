@@ -1,5 +1,0 @@
-fun main() {
-
-}
-
-fun area =
