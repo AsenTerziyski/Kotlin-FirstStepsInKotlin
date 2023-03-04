@@ -1,6 +1,5 @@
-package test
+package test._00_intro
 
-import javafx.application.Application.launch
 import kotlinx.coroutines.*
 import java.util.concurrent.atomic.AtomicInteger
 import kotlin.concurrent.thread
@@ -20,6 +19,7 @@ fun main() = runBlocking {
                 for (x in 1..loops) {
                     delay(waits_ms)
                 }
+                result.getAndIncrement()
             }
         )
     }

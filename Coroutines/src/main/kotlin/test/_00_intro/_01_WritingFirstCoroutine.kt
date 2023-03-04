@@ -1,10 +1,9 @@
-package test
+package test._00_intro
 
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import kotlin.concurrent.thread
 
 fun main() {
 //    thread {
