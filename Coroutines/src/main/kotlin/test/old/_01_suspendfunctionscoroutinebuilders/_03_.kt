@@ -1,4 +1,4 @@
-package test._01_suspendfunctionscoroutinebuilders
+package test.old._01_suspendfunctionscoroutinebuilders
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
